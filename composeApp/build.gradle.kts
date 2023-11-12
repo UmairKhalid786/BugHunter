@@ -41,6 +41,7 @@ kotlin {
             implementation(compose.desktop.currentOs)
         }
         commonMain.dependencies {
+            implementation(libs.kotlin.datetime)
             implementation(projects.shared)
             implementation(compose.runtime)
             implementation(compose.foundation)
