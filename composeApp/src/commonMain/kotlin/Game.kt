@@ -35,7 +35,7 @@ object Game {
         gameStartTime = Clock.System.now().toEpochMilliseconds()
         selectPlayer(player)
 
-        job = CoroutineScope(Dispatchers.Main).launch {
+        job = CoroutineScope(Dispatchers.Default).launch {
             delay(1.minutes)
             gameOver()
         }
